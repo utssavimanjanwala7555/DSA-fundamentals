@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import javax.sound.midi.SysexMessage;
 
 public class prac1 
 {
@@ -9,6 +10,7 @@ public class prac1
         System.out.println("Please enter the size of array:");
         int size = sc.nextInt();
         int arr[] = new int[size];
+        int count = 0;
          
         System.out.println("Select the operation you want to perform:");
         System.out.println("1) Insert");
@@ -23,6 +25,17 @@ public class prac1
         switch(choice)
         {
             case 1: 
+            if(count == size)
+            {
+                System.out.println("Array is full. Cannot insert new element.");
+            }
+            else
+            {
+                System.out.println("ENter an element to insert:");
+                int element = sc.nextInt();
+                arr[count] = element;
+                count++;
+            }
             break;
 
             case 2: 
