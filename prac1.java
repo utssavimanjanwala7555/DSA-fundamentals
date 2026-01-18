@@ -38,7 +38,16 @@ public class prac1
             }
             break;
 
+
             case 2: 
+            if(count == 0)
+            {
+                System.out.println("Array is empty. Cannot delete element");
+            }
+            else
+            {
+                
+            }
             break;
 
             case 3: 
