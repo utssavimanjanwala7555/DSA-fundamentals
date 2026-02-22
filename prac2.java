@@ -25,19 +25,62 @@ public class prac2
 
             switch(choice)
             {
-                case 1:
+                case 1://push
+                    if(top == max -1) 
+                    {
+                        System.out.println("Stack Overflow.Cannot enter new element.");
+                    }
+                    else
+                    {
+                        System.out.println("Enter an element to push:");
+                        int element = sc.nextInt();
+                        top++;
+                        stack[top] = element;
+                    }
                 break;
 
-                case 2:
+                case 2://pop
+                    if(top == -1)
+                    {
+                        System.out.println("Stack Underflow. Cannot delete element.");
+                    }
+                    else
+                    {
+                        int deleted = stack[top];
+                        top--;
+                        System.out.println("Deleted element :" + deleted);
+                    }
                 break;
 
-                case 3:
+                case 3://peep
+                    if(top == -1)
+                    {
+                        System.out.println("Stack is empty.");
+                    }
+                    else
+                    {
+                        System.out.println("Top element is "+ stack[top]);
+                    }
                 break;
 
-                case 4:
+                case 4://display
+                    if(top == -1)
+                    {
+                        System.out.println("Stack is empty.");
+                    }
+                    else
+                    {
+                        System.out.println("Stack elements are:");
+
+                        for(int i = top; i >= 0; i--)
+                        {
+                            System.out.println(stack[i]);
+                        }
+                    }
                 break;
 
                 case 5:
+                    System.out.println("Exiting the program.");
                 break;
             }
         }
