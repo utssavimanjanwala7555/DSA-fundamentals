@@ -45,11 +45,39 @@ public class prac1
             }
             else
             {
-                
+                int deleted = arr[count - 1];
+                count--;
+                System.out.println("Deleted element:0" + deleted);
             }
             break;
 
             case 3: 
+                if (count == 0) 
+                {
+                    System.out.println("Array is empty.");
+                }
+                else
+                {
+                    System.out.println("Enter an element to Search:");
+                    int key = sc.nextInt();
+                    boolean found = false;
+
+                    for(int i = 0; i < count; i++) 
+                    {
+                        if(arr[i] == key)
+                        {
+                            System.out.println("Element found at index:" + i);
+                            found = true;
+                            break;
+                        }
+                        
+                    }
+
+                    if(!found)
+                    {
+                        System.out.println("Element not found");
+                    }
+                }
             break;
 
             case 4: 
