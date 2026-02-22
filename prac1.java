@@ -103,10 +103,24 @@ public class prac1
                 }
             break;
 
-            case 5: 
+            case 5:
+                if(count == 0)
+                {
+                    System.out.println("Array is empty. Nothing to display.");
+                }
+                else
+                {
+                    System.out.println("Elements in the array:");
+
+                    for(int i = 0; i < count; i++)
+                    {
+                        System.out.println(arr[i]);
+                    }
+                }
             break;
 
             case 6: 
+                System.out.println("Exiting the program.");
             break;
         }
          
