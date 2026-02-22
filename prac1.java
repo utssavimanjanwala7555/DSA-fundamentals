@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import javax.sound.midi.SysexMessage;
 
 public class prac1 
 {
