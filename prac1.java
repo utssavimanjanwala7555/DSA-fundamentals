@@ -81,6 +81,26 @@ public class prac1
             break;
 
             case 4: 
+                if(count == 0)
+                {
+                    System.out.println("Array is empty. Cannot update element.");
+                }
+                else
+                {
+                    System.out.println("Enter index to update element:");
+                    int idx = sc.nextInt();
+
+                    if(idx < 0 || idx >= count)
+                    {
+                        System.out.println("Invalid index.");
+                    }
+                    else
+                    {
+                        System.out.println("Ente new value:");
+                        int newVal = sc.nextInt();
+                        arr[idx] = newVal;
+                    }
+                }
             break;
 
             case 5: 
