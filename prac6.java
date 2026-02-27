@@ -26,6 +26,7 @@ public class prac6
             System.out.println("6Check if Circular queue is full or not");
             System.out.println("7.Exit");
 
+            System.out.println("Enter the operation you want to perform:");
             choice = sc.nextInt();
 
             switch(choice)
