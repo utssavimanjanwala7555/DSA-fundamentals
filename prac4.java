@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class prac4 
@@ -63,7 +64,9 @@ public class prac4
 
     public static void main(String[] args) 
     {
-        String infix = "A+B*(C-D)";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter infix expression: ");
+        String infix = sc.nextLine();        
         System.out.println("Infix: " + infix);
         System.out.println("Postfix: " + convert(infix));
     }
